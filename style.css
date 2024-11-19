@@ -793,19 +793,38 @@ body {
 
 .footer-links {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Spasi antar tautan */
+  padding: 20px;
 }
 
 .footer-links a {
-  color: var(--gray-color);
   text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--gray-color);
   transition: var(--transition);
 }
 
 .footer-links a:hover {
   color: var(--primary-color);
 }
+
+
+@media (max-width: 768px) {
+  .footer-links {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+  }
+
+  .footer-links a {
+      width: 100%; /* Make links full-width */
+      text-align: center;
+  }
+}
+
 
 .footer-social {
   display: flex;
