@@ -54,7 +54,7 @@ document.addEventListener('click', (e) => {
 
 // Typed.js Integration
 const typed = new Typed('.typed', {
-    strings: ['Data Analyst', 'Software Engineer', 'Web Developer', 'Project Manager', 'Business Analyst', 'System Analyst'],
+    strings: ['Product Management', 'Business Analyst', 'System Analyst', 'Web Developer'],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 2000,
